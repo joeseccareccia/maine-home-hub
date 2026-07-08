@@ -4,212 +4,137 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Maine Home Hub | Joe Seccareccia</title>
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family:Arial,Helvetica,sans-serif;
-    background:#f4f6f8;
-    color:#333;
-    line-height:1.6;
-}
-
-header{
-    background:#0b4f75;
-    color:white;
-    text-align:center;
-    padding:70px 20px;
-}
-
-header h1{
-    font-size:42px;
-    margin-bottom:15px;
-}
-
-header p{
-    font-size:20px;
-}
-
-.button{
-    display:inline-block;
-    margin-top:25px;
-    background:white;
-    color:#0b4f75;
-    padding:14px 28px;
-    text-decoration:none;
-    border-radius:8px;
-    font-weight:bold;
-}
-
-section{
-    max-width:1100px;
-    margin:auto;
-    padding:60px 20px;
-}
-
-.card{
-    background:white;
-    border-radius:12px;
-    padding:30px;
-    margin-bottom:30px;
-    box-shadow:0 4px 10px rgba(0,0,0,.08);
-}
-
-h2{
-    color:#0b4f75;
-    margin-bottom:20px;
-}
-
-.services{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:20px;
-}
-
-.service{
-    background:#eef5f8;
-    padding:20px;
-    border-radius:10px;
-}
-
-.contact{
-    text-align:center;
-}
-
-footer{
-    background:#0b4f75;
-    color:white;
-    text-align:center;
-    padding:30px;
-}
-</style>
-
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
-<header>
-
-<h1>Maine Home Hub</h1>
-
-<p>Your trusted REALTOR® & Mortgage Loan Officer serving all of Maine.</p>
-
-<a class="button" href="tel:2077459314">
-Call Joe
-</a>
-
+<header class="navbar">
+<div class="container nav-container">
+<div class="logo">
+<h2>Maine Home Hub</h2>
+<span>Real Estate & Mortgage Solutions</span>
+</div>
+<nav>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#buy">Buy</a></li>
+<li><a href="#sell">Sell</a></li>
+<li><a href="#mortgage">Mortgage</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</div>
 </header>
 
-<section>
-
-<div class="card">
-
-<h2>Meet Joe Seccareccia</h2>
-
-<p>
-Whether you're buying your first home, selling your current property,
-or financing your next investment, I'm here to make the process simple.
-</p>
-
-<br>
-
-<p>
-
-📞 207-745-9314
-
-<br><br>
-
-✉️ joemainerealestate@gmail.com
-
-<br><br>
-
-NMLS #1794840
-
-</p>
-
+<section id="home" class="hero">
+<div class="hero-overlay"></div>
+<div class="container hero-content">
+<div class="hero-text">
+<p class="subtitle">Your Maine Real Estate & Mortgage Expert</p>
+<h1>Maine Home Hub</h1>
+<p class="description">Helping you buy, sell, and finance homes across the great state of Maine.</p>
+<div class="hero-buttons">
+<a class="btn blue" href="#buy">Buy a Home</a>
+<a class="btn green" href="#mortgage">Get Pre-Approved</a>
+</div>
 </div>
 
-<div class="card">
-
-<h2>How I Can Help</h2>
-
-<div class="services">
-
-<div class="service">
-<h3>Buy a Home</h3>
-<p>Expert guidance from start to closing.</p>
+<div class="hero-image">
+<img src="Headshot.jpg" alt="Joe Seccareccia">
+<div class="contact-card">
+<h2>Joe Seccareccia</h2>
+<p>REALTOR® | Mortgage Loan Officer</p>
+<hr>
+<p>📞 207-745-9314</p>
+<p>✉️ joemainerealestate@gmail.com</p>
+<p>NMLS #1794840</p>
 </div>
-
-<div class="service">
-<h3>Sell Your Home</h3>
-<p>Professional marketing and pricing strategies.</p>
 </div>
-
-<div class="service">
-<h3>Mortgage Financing</h3>
-<p>Pre-approvals, refinancing, FHA, VA and Conventional loans.</p>
 </div>
+</section>
 
-<div class="service">
-<h3>Investment Property</h3>
-<p>Helping investors grow throughout Maine.</p>
-</div>
+<section id="buy" class="services">
 
-</div>
+    <div class="container">
 
-</div>
+        <h2 class="section-title">Helping You Every Step of the Way</h2>
 
-<div class="card contact">
+        <p class="section-subtitle">
+            Whether you're buying, selling, or financing a home, I'm here to guide you from start to finish.
+        </p>
 
-<h2>Connect With Me</h2>
+        <div class="service-grid">
 
-<p>
+            <div class="service-card">
+                <h3>🏡 Buy a Home</h3>
+                <p>Personalized home searches, negotiations, and guidance through closing.</p>
+            </div>
 
-<a href="https://www.facebook.com/JoeSeccarecciaRealEstate/" target="_blank">
+            <div class="service-card">
+                <h3>💰 Sell Your Home</h3>
+                <p>Professional marketing, pricing strategies, and maximum exposure.</p>
+            </div>
 
-Facebook
+            <div class="service-card">
+                <h3>🏦 Mortgage Services</h3>
+                <p>Pre-approvals, FHA, VA, Conventional, USDA, and Investment financing.</p>
+            </div>
 
-</a>
+            <div class="service-card">
+                <h3>📈 Investment Properties</h3>
+                <p>Helping investors identify opportunities throughout Maine.</p>
+            </div>
 
-</p>
+        </div>
 
-<br>
-
-<p>
-
-Email:
-joemainerealestate@gmail.com
-
-</p>
-
-<br>
-
-<p>
-
-Phone:
-207-745-9314
-
-</p>
-
-</div>
+    </div>
 
 </section>
 
-<footer>
+<section id="about" class="about">
 
-© 2026 Maine Home Hub
+    <div class="container">
 
-<br>
+        <h2 class="section-title">About Joe Seccareccia</h2>
 
-Joe Seccareccia • REALTOR® • Mortgage Loan Officer
+        <p>
+            As both a REALTOR® and Mortgage Loan Officer, I help clients simplify the home buying and selling process by offering real estate expertise and financing guidance all in one place.
+        </p>
+
+        <p>
+            My goal is to provide honest advice, local market knowledge, and exceptional service for buyers, sellers, and investors across Maine.
+        </p>
+
+    </div>
+
+</section>
+
+<footer id="contact">
+
+    <div class="container">
+
+        <h2>Let's Connect</h2>
+
+        <p>📞 207-745-9314</p>
+
+        <p>✉️ joemainerealestate@gmail.com</p>
+
+        <p>NMLS #1794840</p>
+
+        <p>
+            <a href="https://www.facebook.com/JoeSeccarecciaRealEstate/" target="_blank">
+                Facebook Business Page
+            </a>
+        </p>
+
+        <p style="margin-top:25px;">
+            © 2026 Maine Home Hub | Joe Seccareccia
+        </p>
+
+    </div>
 
 </footer>
 
 </body>
-
 </html>
