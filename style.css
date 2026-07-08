@@ -1,6 +1,7 @@
-/* ==========================
-   Maine Home Hub Styles
-========================== */
+/* ===================================
+   MAINE HOME HUB v2
+   Part 1 - Reset, Navigation & Hero
+=================================== */
 
 *{
     margin:0;
@@ -14,9 +15,15 @@ html{
 
 body{
     font-family:'Open Sans',sans-serif;
-    background:#f5f7fa;
     color:#333;
-    line-height:1.6;
+    background:#f4f7fb;
+    overflow-x:hidden;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
 }
 
 /* Navigation */
@@ -25,35 +32,33 @@ body{
     position:fixed;
     top:0;
     width:100%;
-    background:rgba(10,48,76,.95);
-    backdrop-filter:blur(8px);
     z-index:999;
+    background:rgba(8,41,67,.90);
+    backdrop-filter:blur(10px);
 }
 
 .nav-container{
-    max-width:1200px;
-    margin:auto;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:18px 25px;
+    padding:18px 0;
 }
 
 .logo h2{
-    color:white;
+    color:#fff;
     font-family:'Montserrat',sans-serif;
     font-size:28px;
 }
 
 .logo span{
-    color:#d9e8f2;
+    color:#d7e7f5;
     font-size:13px;
 }
 
 nav ul{
     display:flex;
     list-style:none;
-    gap:28px;
+    gap:30px;
 }
 
 nav a{
@@ -64,22 +69,655 @@ nav a{
 }
 
 nav a:hover{
-    color:#67c587;
+    color:#74d39f;
 }
 
+/* HERO */
+
 .hero{
+
     min-height:100vh;
-    display:flex;
-    align-items:center;
-    position:relative;
 
     background:
-    linear-gradient(rgba(6,40,72,.45),rgba(6,40,72,.45)),
-    url("images/portland-head-light.jpg")
+    linear-gradient(rgba(8,45,72,.45),rgba(8,45,72,.45)),
+    url("images/portland-head-light-5539153_1280.jpg");
 
     background-size:cover;
     background-position:center;
-    background-attachment:fixed;
+    background-repeat:no-repeat;
+
+    display:flex;
+    align-items:center;
 
     color:white;
+
+}
+
+.hero-content{
+
+    display:grid;
+
+    grid-template-columns:1fr 430px;
+
+    gap:70px;
+
+    align-items:center;
+
+    padding-top:130px;
+
+    padding-bottom:90px;
+
+}
+
+.hero-text h1{
+
+    font-size:76px;
+
+    line-height:1;
+
+    font-family:'Montserrat',sans-serif;
+
+    margin:25px 0;
+
+}
+
+.subtitle{
+
+    color:#91ddff;
+
+    text-transform:uppercase;
+
+    letter-spacing:3px;
+
+    font-size:15px;
+
+}
+
+.description{
+
+    font-size:24px;
+
+    max-width:620px;
+
+    line-height:1.6;
+
+}
+
+.hero-buttons{
+
+    margin-top:40px;
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.btn{
+
+    padding:16px 32px;
+
+    border-radius:10px;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+.blue{
+    background:#1d73c8;
+}
+
+.green{
+    background:#2f9b5d;
+}
+
+.btn:hover{
+
+    transform:translateY(-4px);
+
+}/* ===================================
+   Part 2 - Headshot & Contact Card
+=================================== */
+
+.hero-image{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.hero-image img{
+
+    width:100%;
+
+    max-width:420px;
+
+    border-radius:22px;
+
+    border:8px solid #ffffff;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.35);
+
+    display:block;
+
+}
+
+.contact-card{
+
+    width:90%;
+
+    margin-top:-45px;
+
+    background:rgba(255,255,255,.96);
+
+    backdrop-filter:blur(10px);
+
+    border-radius:18px;
+
+    padding:28px;
+
+    color:#333;
+
+    box-shadow:0 18px 40px rgba(0,0,0,.22);
+
+    position:relative;
+
+    z-index:5;
+
+}
+
+.contact-card h2{
+
+    color:#0c4f77;
+
+    font-size:28px;
+
+    margin-bottom:8px;
+
+}
+
+.contact-card p{
+
+    margin:8px 0;
+
+    font-size:16px;
+
+}
+
+.contact-card hr{
+
+    border:none;
+
+    border-top:1px solid #ddd;
+
+    margin:18px 0;
+
+}
+
+/* ===================================
+   Services Section
+=================================== */
+
+.services{
+
+    padding:100px 0;
+
+    background:white;
+
+}
+
+.section-title{
+
+    text-align:center;
+
+    font-size:46px;
+
+    color:#0c4f77;
+
+    font-family:'Montserrat',sans-serif;
+
+    margin-bottom:15px;
+
+}
+
+.section-subtitle{
+
+    text-align:center;
+
+    color:#666;
+
+    max-width:700px;
+
+    margin:0 auto 55px;
+
+}
+
+.service-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+}
+
+.service-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.service-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.icon{
+
+    font-size:50px;
+
+    margin-bottom:18px;
+
+}
+
+.service-card h3{
+
+    color:#0b4f75;
+
+    margin-bottom:15px;
+
+}
+
+.service-card p{
+
+    color:#666;
+
+    line-height:1.7;
+
+}/* ===================================
+   Part 3 - About, Contact & Footer
+=================================== */
+
+.about{
+
+    padding:100px 0;
+
+    background:#f5f8fc;
+
+}
+
+.about-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 400px;
+
+    gap:70px;
+
+    align-items:center;
+
+}
+
+.about-grid p{
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    color:#555;
+
+    margin-bottom:20px;
+
+}
+
+.about-photo{
+
+    width:100%;
+
+    max-width:380px;
+
+    margin:auto;
+
+    display:block;
+
+    border-radius:20px;
+
+    border:8px solid white;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.20);
+
+}
+
+.contact{
+
+    padding:100px 0;
+
+    background:#0b4f75;
+
+    color:white;
+
+    text-align:center;
+
+}
+
+.contact .section-title{
+
+    color:white;
+
+}
+
+.contact .section-subtitle{
+
+    color:#dbe9f5;
+
+}
+
+.contact-buttons{
+
+    margin-top:40px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+footer{
+
+    background:#062b44;
+
+    color:white;
+
+    text-align:center;
+
+    padding:40px 20px;
+
+}
+
+footer h3{
+
+    font-family:'Montserrat',sans-serif;
+
+    font-size:28px;
+
+    margin-bottom:15px;
+
+}
+
+footer p{
+
+    margin:8px 0;
+
+    color:#d6e4f0;
+
+}/* ===================================
+   Part 3 - About, Contact & Footer
+=================================== */
+
+.about{
+
+    padding:100px 0;
+
+    background:#f5f8fc;
+
+}
+
+.about-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 400px;
+
+    gap:70px;
+
+    align-items:center;
+
+}
+
+.about-grid p{
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    color:#555;
+
+    margin-bottom:20px;
+
+}
+
+.about-photo{
+
+    width:100%;
+
+    max-width:380px;
+
+    margin:auto;
+
+    display:block;
+
+    border-radius:20px;
+
+    border:8px solid white;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.20);
+
+}
+
+.contact{
+
+    padding:100px 0;
+
+    background:#0b4f75;
+
+    color:white;
+
+    text-align:center;
+
+}
+
+.contact .section-title{
+
+    color:white;
+
+}
+
+.contact .section-subtitle{
+
+    color:#dbe9f5;
+
+}
+
+.contact-buttons{
+
+    margin-top:40px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+footer{
+
+    background:#062b44;
+
+    color:white;
+
+    text-align:center;
+
+    padding:40px 20px;
+
+}
+
+footer h3{
+
+    font-family:'Montserrat',sans-serif;
+
+    font-size:28px;
+
+    margin-bottom:15px;
+
+}
+
+footer p{
+
+    margin:8px 0;
+
+    color:#d6e4f0;
+
+}/* ===================================
+   Part 6 - Featured Listings, Testimonials & Final Polish
+=================================== */
+
+.featured{
+
+    padding:100px 0;
+
+    background:#ffffff;
+
+}
+
+.testimonials{
+
+    padding:100px 0;
+
+    background:#eef4f9;
+
+}
+
+.testimonials .service-card{
+
+    max-width:800px;
+
+    margin:0 auto;
+
+    text-align:center;
+
+    font-size:20px;
+
+}
+
+.cta{
+
+    padding:90px 20px;
+
+    text-align:center;
+
+    background:linear-gradient(135deg,#0b4f75,#1d73c8);
+
+    color:white;
+
+}
+
+.cta h2{
+
+    font-size:46px;
+
+    font-family:'Montserrat',sans-serif;
+
+    margin-bottom:20px;
+
+}
+
+.cta p{
+
+    font-size:22px;
+
+    max-width:700px;
+
+    margin:0 auto 35px;
+
+}
+
+footer{
+
+    border-top:5px solid #2f9b5d;
+
+}
+
+footer p{
+
+    font-size:16px;
+
+}
+
+footer a{
+
+    color:#7fd6ff;
+
+    text-decoration:none;
+
+}
+
+footer a:hover{
+
+    text-decoration:underline;
+
+}
+
+.hero-image img{
+
+    transition:transform .35s ease, box-shadow .35s ease;
+
+}
+
+.hero-image img:hover{
+
+    transform:scale(1.03);
+
+    box-shadow:0 30px 60px rgba(0,0,0,.35);
+
+}
+
+.contact-card{
+
+    transition:transform .3s ease;
+
+}
+
+.contact-card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.service-card{
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+
+}
+
+.service-card:hover{
+
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
+
 }

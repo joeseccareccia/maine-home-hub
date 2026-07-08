@@ -1,0 +1,85 @@
+/* ==========================
+   Maine Home Hub Styles
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Open Sans',sans-serif;
+    background:#f5f7fa;
+    color:#333;
+    line-height:1.6;
+}
+
+/* Navigation */
+
+.navbar{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:rgba(10,48,76,.95);
+    backdrop-filter:blur(8px);
+    z-index:999;
+}
+
+.nav-container{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 25px;
+}
+
+.logo h2{
+    color:white;
+    font-family:'Montserrat',sans-serif;
+    font-size:28px;
+}
+
+.logo span{
+    color:#d9e8f2;
+    font-size:13px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:28px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#67c587;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    position:relative;
+
+    background:
+    linear-gradient(rgba(6,40,72,.45),rgba(6,40,72,.45)),
+    url("images/portland-head-light.jpg")
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
+    color:white;
+}
