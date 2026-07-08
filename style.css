@@ -118,7 +118,7 @@ nav a:hover{
     font-family:'Montserrat',sans-serif;
 
     margin:25px 0;
-
+    color:#0b4f75;
 }
 
 .subtitle{
@@ -790,4 +790,16 @@ footer a:hover{
 
     color:#0b4f75;
 
+}/* Force Hero Text Colors */
+
+.hero-text h1{
+    color:#0b4f75 !important;
+}
+
+.hero-text .description{
+    color:#1f3f5b !important;
+}
+
+.hero-text .subtitle{
+    color:#4da3d9 !important;
 }
