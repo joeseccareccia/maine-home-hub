@@ -80,7 +80,7 @@ nav a:hover{
 
     background:
     linear-gradient(rgba(8,45,72,.45),rgba(8,45,72,.45)),
-    url("images/portland-head-light-5539153_1280.jpg");
+   url("./images/portland-head-light-5539153_1280.jpg")
 
     background-size:cover;
     background-position:center;
@@ -719,5 +719,75 @@ footer a:hover{
 .service-card:hover{
 
     box-shadow:0 20px 45px rgba(0,0,0,.15);
+
+}/* ===========================
+   CLIENT REVIEWS
+=========================== */
+
+.reviews{
+
+    padding:100px 0;
+
+    background:#eef5fb;
+
+}
+
+.reviews-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:30px;
+
+    margin-top:50px;
+
+}
+
+.review-card{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:18px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.review-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.stars{
+
+    font-size:28px;
+
+    color:#f5b400;
+
+    margin-bottom:20px;
+
+}
+
+.review-text{
+
+    font-size:17px;
+
+    line-height:1.8;
+
+    color:#555;
+
+    margin-bottom:25px;
+
+}
+
+.review-card h4{
+
+    color:#0b4f75;
 
 }
