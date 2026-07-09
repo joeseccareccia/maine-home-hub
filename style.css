@@ -79,8 +79,8 @@ nav a:hover{
     min-height:100vh;
 
     background:
-    linear-gradient(rgba(8,45,72,.35), rgba(8,45,72,.35)),
-    url("images/lighthouse-backgroud.jpg");
+    linear-gradient(rgba(8,45,72,.45),rgba(8,45,72,.45)),
+   url("./images/portland-head-light-5539153_1280.jpg")
 
     background-size:cover;
     background-position:center;
@@ -112,13 +112,13 @@ nav a:hover{
 .hero-text h1{
 
     font-size:76px;
+
     line-height:1;
+
     font-family:'Montserrat',sans-serif;
+
     margin:25px 0;
-
-    color:#ffffff;
-
-    text-shadow:0 4px 15px rgba(0,0,0,.45);
+    color:#0b4f75;
 }
 
 .subtitle{
@@ -136,12 +136,10 @@ nav a:hover{
 .description{
 
     font-size:24px;
+
     max-width:620px;
+
     line-height:1.6;
-
-    color:#ffffff;
-
-    text-shadow:0 2px 8px rgba(0,0,0,.40);
 
 }
 
@@ -212,36 +210,53 @@ nav a:hover{
 
 .contact-card{
 
-    .contact-card{
-    text-align:left;
+    width:90%;
+
+    margin-top:-45px;
+
+    background:rgba(255,255,255,.96);
+
+    backdrop-filter:blur(10px);
+
+    border-radius:18px;
+
+    padding:28px;
+
+    color:#333;
+
+    box-shadow:0 18px 40px rgba(0,0,0,.22);
+
+    position:relative;
+
+    z-index:5;
+
 }
 
 .contact-card h2{
-    margin:0 0 12px;
-    color:#0b4f75;
-}
 
-.contact-card .job-title{
-    margin:6px 0;
-    font-weight:600;
-    color:#555;
-}
+    color:#0c4f77;
 
-.contact-card hr{
-    margin:22px 0;
-    border:none;
-    border-top:1px solid #ddd;
+    font-size:28px;
+
+    margin-bottom:8px;
+
 }
 
 .contact-card p{
-    margin:10px 0;
-    line-height:1.5;
+
+    margin:8px 0;
+
+    font-size:16px;
+
 }
 
-.contact-card .nmls{
-    margin-top:18px;
-    font-size:15px;
-    color:#666;
+.contact-card hr{
+
+    border:none;
+
+    border-top:1px solid #ddd;
+
+    margin:18px 0;
 
 }
 
@@ -349,11 +364,14 @@ nav a:hover{
 
 }
 
-.about-grid {
+.about-grid{
 
-     display:grid;
-    grid-template-columns:1fr 650px;
-    gap:60px;
+    display:grid;
+
+    grid-template-columns:1fr 400px;
+
+    gap:70px;
+
     align-items:center;
 
 }
@@ -373,11 +391,15 @@ nav a:hover{
 .about-photo{
 
     width:100%;
-    max-width:650px;
-    display:block;
+
+    max-width:380px;
+
     margin:auto;
 
+    display:block;
+
     border-radius:20px;
+
     border:8px solid white;
 
     box-shadow:0 20px 45px rgba(0,0,0,.20);
@@ -466,9 +488,9 @@ footer p{
 
     display:grid;
 
-    grid-template-columns:1fr 700px;
+    grid-template-columns:1fr 400px;
 
-    gap:80px;
+    gap:70px;
 
     align-items:center;
 
@@ -489,15 +511,18 @@ footer p{
 .about-photo{
 
     width:100%;
-    max-width:700px;
+
+    max-width:380px;
+
+    margin:auto;
 
     display:block;
 
-    border-radius:22px;
+    border-radius:20px;
 
     border:8px solid white;
 
-    box-shadow:0 20px 50px rgba(0,0,0,.18);
+    box-shadow:0 20px 45px rgba(0,0,0,.20);
 
 }
 
