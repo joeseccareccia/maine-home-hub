@@ -79,8 +79,8 @@ nav a:hover{
     min-height:100vh;
 
     background:
-    linear-gradient(rgba(8,45,72,.45),rgba(8,45,72,.45)),
-   url("./images/portland-head-light-5539153_1280.jpg")
+    linear-gradient(rgba(8,45,72,.35), rgba(8,45,72,.35)),
+    url("images/lighthouse-backgroud.jpg");
 
     background-size:cover;
     background-position:center;
