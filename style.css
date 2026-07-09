@@ -118,7 +118,10 @@ nav a:hover{
     font-family:'Montserrat',sans-serif;
 
     margin:25px 0;
-    color:#0b4f75;
+
+    color:#ffffff;
+
+    text-shadow:0 4px 12px rgba(0,0,0,.45);
 }
 
 .subtitle{
@@ -135,11 +138,15 @@ nav a:hover{
 
 .description{
 
-    font-size:24px;
+        font-size:24px;
 
     max-width:620px;
 
     line-height:1.6;
+
+    color:#ffffff;
+
+    text-shadow:0 2px 8px rgba(0,0,0,.35);
 
 }
 
