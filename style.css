@@ -349,14 +349,11 @@ nav a:hover{
 
 }
 
-.about-grid{
+.about-grid {
 
-    display:grid;
-
-    grid-template-columns:1fr 400px;
-
-    gap:70px;
-
+     display:grid;
+    grid-template-columns:1fr 650px;
+    gap:60px;
     align-items:center;
 
 }
@@ -376,15 +373,11 @@ nav a:hover{
 .about-photo{
 
     width:100%;
-
-    max-width:380px;
-
+    max-width:650px;
+    display:block;
     margin:auto;
 
-    display:block;
-
     border-radius:20px;
-
     border:8px solid white;
 
     box-shadow:0 20px 45px rgba(0,0,0,.20);
@@ -473,9 +466,9 @@ footer p{
 
     display:grid;
 
-    grid-template-columns:1fr 400px;
+    grid-template-columns:1fr 700px;
 
-    gap:70px;
+    gap:80px;
 
     align-items:center;
 
@@ -496,18 +489,15 @@ footer p{
 .about-photo{
 
     width:100%;
-
-    max-width:380px;
-
-    margin:auto;
+    max-width:700px;
 
     display:block;
 
-    border-radius:20px;
+    border-radius:22px;
 
     border:8px solid white;
 
-    box-shadow:0 20px 45px rgba(0,0,0,.20);
+    box-shadow:0 20px 50px rgba(0,0,0,.18);
 
 }
 
