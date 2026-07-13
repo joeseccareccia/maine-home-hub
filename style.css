@@ -47,6 +47,8 @@ body{
     display:flex;
     align-items:center;
     gap:15px;
+    margin-left:-40px;
+
 }
 
 .nav-logo{
