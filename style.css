@@ -812,4 +812,10 @@ footer a:hover{
 
 .hero-text .subtitle{
     color:#4da3d9 !important;
+}/* Equal Housing Lender Logo */
+.equal-housing-logo {
+    display: block;
+    width: 140px;
+    height: auto;
+    margin-top: 15px;
 }
