@@ -42,13 +42,12 @@ body{
     justify-content:space-between;
     align-items:center;
     padding:18px 0;
+
 }
 .logo{
     display:flex;
     align-items:center;
     gap:15px;
-    margin-left:-40px;
-
 }
 
 .nav-logo{
